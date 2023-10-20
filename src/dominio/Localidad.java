@@ -7,10 +7,6 @@ public class Localidad {
         this.nombre_localidad = nombre;
 		this.habitantes_localidad = habitantes_localidad;
     }
-	/*public Localidad (String nombre,int habitantes_localidad){
-		this.nombre = nombre;
-		this.habitantes_localidad = habitantes_localidad;
-	}*/
 	public void setNombre(String nombre){
 		this.nombre_localidad = nombre;
 	}

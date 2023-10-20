@@ -60,59 +60,5 @@ public class Interfaz {
             }
      }
 }
-
-
-
-
-/*package interfaz;
-import dominio.*;
-import java.util.*;
-import java.io.*;
-
-public class Interfaz{
-    public static ArrayList<Provincia> leer(){
-        ArrayList<Provincia> provincias = new ArrayList<>();
-        Scanner sc = new Scanner (System.in);
-
-        do{
-        System.out.println("Nombre de la provincia: (Enter para finalizar.)");
-        String nomProvincia = sc.nextLine();
-            if(nomProvincia != ""){
-                Provincia P = new Provincia (nomProvincia);
-                do{
-                    // Leer Municipio de la Provincia.
-                    System.out.println("Nombre del municipio: (Enter para finalizar.)");
-                    String nomMunicipio = sc.nextLine();
-                        if(nomMunicipio != ""){
-                            Municipio M = new Municipio(nomMunicipio);
-                            P.addMunicipio(M);
-                            do{
-                                System.out.println("Nombre del municipio: (Enter para finalizar.)");
-                                String nomLocalidad = sc.nextLine();
-                                    if(nomLocalidad != ""){
-                                        Localidad L = new Localidad(nomLocalidad);
-                                        M.addLocalidad(L);
-                                    }
-                            }
-                        }
-                provincias.add (P);
-                } while (nomMunicipio != "");
-            }  // if (nomProvincia != "")
-        }while (nomProvincia != "");
-                return provincias;
-    }
-}*/
-
-        // sc.next(); ---> Lee la cadena hasta un separador.
-        // sc.nextLines(); ---> Lee hasta el salto de línea.
-        /*pseudocodigo
-        repetir
-            leer nombre de provincias
-                si nombre == ""{
-                    siguiente};
-                si no{
-                    crear objeto provincia;
-                    repetir
-                        leer nombre municipio;*/
                 
                     
