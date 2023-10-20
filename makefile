@@ -17,7 +17,7 @@ jar:compilar
 	@echo "Class-Path: . ">> manifest.txt
 	@echo "" >> manifest.txt
 	jar cvfm $(JAR_FILE) manifest.txt  -C  $(OUT_DIR) .
-ejecutar_aplicacion:compilar
+ejecutar_principal:compilar
 	java -cp $(OUT_DIR) $(APLICACION_CLASS)
 ejecutar_interfaz:compilar
 	java -cp $(OUT_DIR) $(INTERFAZ_CLASS)  
