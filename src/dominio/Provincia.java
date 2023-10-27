@@ -46,9 +46,16 @@ public class Provincia {
         return this.nombre_provincia;
     }
 
+    public Municipio getMunicipio(int i){
+        return municipios.get(i);
+    }
+
     public ArrayList<Municipio> getMunicipios() {
         return municipios;
     }
+
+    
+
 
     public static void main(String[] args) {
     }
