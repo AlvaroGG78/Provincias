@@ -34,6 +34,7 @@ public class Provincia {
 
     public Provincia(String nombre){
         this.nombre_provincia = nombre;
+        municipios = new ArrayList<>();
     }
 
     public Provincia add (Municipio mun){
