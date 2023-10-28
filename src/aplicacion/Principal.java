@@ -1,17 +1,14 @@
 package aplicacion;
 import dominio.*;
-import interfaz.*;
-import java.util.*;
-import java.io.*;
-
+import presentacion.Interfaz;
+import java.util.ArrayList;
 public class Principal {
     public static void main(String[] args) {
-        ArrayList<Provincia> provincias=new ArrayList<Provincia>();
+        Interfaz interfaz=new Interfaz();
         String peticion;
-        Interfaz.procesarPeticion("help", provincias); // para mostrar ayuda
+        interfaz.procesarPeticion("help");// para que muestre la ayuda al principio
         do {
-            peticion=Interfaz.leerPeticion();
-        } while (Interfaz.procesarPeticion(peticion,provincias));
+            peticion=interfaz.leerPeticion();
+        } while (interfaz.procesarPeticion(peticion));
     }
-    
 }

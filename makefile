@@ -1,7 +1,5 @@
 P=Principal
-I=Interfaz
 APLICACION_CLASS=aplicacion.$(P)
-INTERFAZ_CLASS=interfaz.$(I)
 SRC_DIR=./src
 OUT_DIR=bin
 LIB_DIR=./lib
@@ -17,10 +15,8 @@ jar:compilar
 	@echo "Class-Path: . ">> manifest.txt
 	@echo "" >> manifest.txt
 	jar cvfm $(JAR_FILE) manifest.txt  -C  $(OUT_DIR) .
-ejecutar_principal:compilar
-	java -cp $(OUT_DIR) $(APLICACION_CLASS)
-ejecutar_interfaz:compilar
-	java -cp $(OUT_DIR) $(INTERFAZ_CLASS)  
+ejecutar:compilar
+	java -cp $(OUT_DIR) $(APLICACION_CLASS)  
 limpiar:
 	rm -rf $(OUT_DIR)
 	rm -rf $(DOC_DIR)

@@ -1,6 +1,5 @@
-# Provincias README
+# Provincias
 
-Para ejecurtar utiliza los comandos:
+Para ejecutar, escribir:
 
-make ejecutar_aplicacion
-make ejecutar_interfaz
+	"make ejecutar"
